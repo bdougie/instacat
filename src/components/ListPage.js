@@ -29,7 +29,7 @@ export default Relay.createContainer(ListPage, {
   fragments: {
     viewer: () => Relay.QL`
       fragment on Viewer {
-        allPosts(first: 1000000) {
+        allPosts(first: 100) {
           edges {
             node {
               id
